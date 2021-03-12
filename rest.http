@@ -1,0 +1,64 @@
+###
+GET  http://localhost:3000/api/Banks
+
+###
+POST http://localhost:3000/api/Banks
+Content-Type: application/json
+
+{
+    "Bankname":"Equity Bank",
+    "Location":"Kayonza"
+}
+###
+DELETE  http://localhost:3000/api/Banks
+
+###
+PUT  http://localhost:3000/api/Banks/5fc46cba17aa8c2f18344ad4
+Content-Type: application/json
+
+{
+"Bankname":"IBM-Bank",
+"Location":"Kigali-Rwanda"
+}
+###
+GET http://localhost:3000/api/Customers
+###
+POST http://localhost:3000/api/Customers
+Content-Type: application/json
+
+{
+"fullname":"Nshimiye Emmy",
+"email":"nshimiy311@gmail.com",
+"country":"Rwanda",
+"password":"123@nshimiye",
+"Bankname":"5fc46ca417aa8c2f18344ad3"
+}
+###
+POST http://localhost:3000/api/Customers/login
+Content-Type: application/json
+
+{
+"email":"nshimiye311@gmail.com",
+"password":"123@nshimiye"
+}
+
+###
+POST http://localhost:3000/api/Customers/login
+Content-Type: application/json
+
+{
+"email":"nshimiye311@gmail.com",
+"password":"123@nshimiye"
+}
+
+
+###
+POST http://localhost:3000/api/loans
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYzRkZWQ1NTUwNDI0MjU3MDIxMDkzOCIsIkFjY291bnROdW1iZXIiOiI4M0Q2OUBEM0U4IiwiZnVsbG5hbWUiOiJOc2hpbWl5ZSBFbW15IiwiZW1haWwiOiJuc2hpbWl5ZTMxMUBnbWFpbC5jb20iLCJpYXQiOjE2MDY3NTkyNjN9.qrMXHSZ4pBN5uJbKEcFZGqF-jMCEqLPewsqqboTluqg
+
+{
+    "amountRequested":20000,
+    "AccountNumber":"5fc4b58476a6783a501f198f"
+}
+
